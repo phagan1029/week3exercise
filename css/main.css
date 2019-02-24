@@ -1,21 +1,64 @@
 /* cascading style sheets */
 /* css selector */
-h1 {color: purple;}
 
-p {color: blue;
-	/* CSS property: value; */
+
+div.navigation ul li{
+	display:inline-block;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
 }
 
-button {
-	/* this changes the background */
-	background: tomato;
+li:hover {
+	background-color: magenta;
+	 border: 5px double;
+	 transition: 0.5s ease;
+	 color: white;
+}
+
+a:hover {
 	color: white;
-	border: none;
-	text-transform: uppercase;
-	font-weight: bold;
-	box-shadow: -5px 5px 5px grey;
-	padding: 20px 30px;
-	/* padding makes the box bigger */
-
-	
+	font-size: 150%;
 }
+
+div.buttons {
+	text-align: center;
+}
+
+.button {
+	background-color: navy;
+	border: none;
+	color: orange;
+	font-size: 35px;
+}
+
+.button:hover {
+	background-color: black; 
+}
+
+.button2 {
+	background-color: #f44336;
+	border: double;
+	color: #008cba;
+	padding: 15px 32px;
+	font-size: 20px;
+	opacity: 5;
+  	transition: 0.3s;
+
+}
+.button2:hover {
+	opacity:.09
+}
+
+.button3 {
+	background-color: white;
+	border: none;
+	color: orange;
+	font-size: 30px;
+}
+.button3:hover {background-color: #3e8e41}
+
+.button3:active {
+  background-color: #3e8e41;
+  box-shadow: 0 10px #666;
+  transform: translateY(4px);
